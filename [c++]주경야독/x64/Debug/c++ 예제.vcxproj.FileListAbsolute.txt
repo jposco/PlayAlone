@@ -1,0 +1,2 @@
+C:\Users\gram\Desktop\Development\C++ 독학\c++ 예제\x64\Debug\c++ 예제.exe
+C:\Users\gram\Desktop\Development\github\KDT_SF_2nd\c++ 주경야독\x64\Debug\[c++] 주경야독.exe
