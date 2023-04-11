@@ -48,5 +48,8 @@
     <ClCompile Include="키오스크만들기 while문.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="업다운게임.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
