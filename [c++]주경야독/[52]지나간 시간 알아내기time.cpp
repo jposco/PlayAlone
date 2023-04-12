@@ -1,6 +1,5 @@
 #include <iostream>
 #include <ctime> //시간을 불러오는 인클루드
-
 using namespace std;
 
 int main()
@@ -8,6 +7,7 @@ int main()
 	//time_t:날짜와 시간을 얻을 수 있는 함수
 	time_t start = time(NULL);
 	time_t finish = time(NULL);
+
 
 	int pass_int = 1;
 
