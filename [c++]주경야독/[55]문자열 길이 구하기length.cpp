@@ -11,6 +11,5 @@ int main()
 	cout << "Áø´ö¿©¿Õ ÀÌ¸§ ±æÀÌ : " << jinduk_name.length() << endl;
 	cout << "Áø¼º¿©¿Õ ÀÌ¸§ ±æÀÌ : " << jinsung_name.length() << endl;
 
-
 	return  0;
 }
