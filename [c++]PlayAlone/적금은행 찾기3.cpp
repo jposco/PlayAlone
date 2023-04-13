@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
+
 namespace NH
 {
 	double deposit_1year(int money)
