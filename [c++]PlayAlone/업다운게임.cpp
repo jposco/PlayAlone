@@ -11,7 +11,7 @@ int main()
     cout << " -----------------------------------------------" << endl;
 
     // ·£´ı ½Ãµå ¼³Á¤
-    srand((unsigned int)time(NULL));
+    srand((unsigned int)time(NULL)); 
 
     // ·£´ıÇÑ ¼ö »ı¼º
     int answer = rand() % 100 + 1;
