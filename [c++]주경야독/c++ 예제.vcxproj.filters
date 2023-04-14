@@ -57,5 +57,8 @@
     <ClCompile Include="[152]vector 사용하기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="[153]vecto사용하기 수정.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

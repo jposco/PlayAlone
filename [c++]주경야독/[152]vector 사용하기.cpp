@@ -7,7 +7,7 @@ int main()
 {
 	vector<int> data;
 
-	data.assign(5, 100);
+	data.assign(5, 5);
 	for (int i=0;i<data.size(); i++)
 	{
 		cout << "data" << i << " : " << data.at(i) << endl;
@@ -23,8 +23,10 @@ int main()
 	else
 	{
 		for (int i = 0; i < data.size(); i++)
-			cout << "data" << i << " : " << data.at(i) << end;
+			cout << "data" << i << " : " << data.at(i) << endl;
 	}
 
 	return 0;
 }
+// 5 5 5 5 5
+// 1 5 5 5 2
