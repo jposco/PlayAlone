@@ -134,7 +134,10 @@
     <ClCompile Include="[110]동적 메모리 할당.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="[146]tuple 사용하기make tuple get.cpp" />
+    <ClCompile Include="[146]tuple 사용하기make tuple get.cpp">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="[152]vector 사용하기.cpp" />
     <ClCompile Include="[35]순환문으로 문자 갯수 구하기for.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

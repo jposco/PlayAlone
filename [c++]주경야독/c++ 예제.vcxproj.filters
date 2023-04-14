@@ -54,5 +54,8 @@
     <ClCompile Include="[146]tuple 사용하기make tuple get.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="[152]vector 사용하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
