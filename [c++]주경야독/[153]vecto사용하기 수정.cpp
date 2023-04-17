@@ -7,7 +7,7 @@ int main()
 {
 	vector<int> data1({ 1, 2, 3 });
 	vector<int> data2 = { 10, 20, 40 };
-
+	  
 	data1.swap(data2); //data1과 data2가 바뀐다
 	data1.insert(data1.begin() + 1, 20); //삽입한다, 두번째엔 삽입할 내용
 
