@@ -38,7 +38,7 @@ int main()
         {
             cout << "정답입니다. 게임승리!" << endl;
             cout << cnt << "회 만에 성공하셨습니다!" << endl;
-            break;
+            break; 
         }
         else if (guess < answer)
         {
