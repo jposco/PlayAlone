@@ -8,7 +8,7 @@ int main()
 {
 	cout<<"[035]순환문으로 특정 문자 개수 구하기(for)"<<endl;
 	string str = "the hin state was formed in southern korea by the 3rd century BC";
-
+	 
 	char find_a = 'a'; // a를 찾아낼 변수
 	
 	int size = str.size(); // str의 길이를 나타낼 변수
