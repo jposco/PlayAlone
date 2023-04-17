@@ -11,7 +11,7 @@ int main()
 		for (int j = 1; j <= 9; j++)
 		{
 			int mul= i*j;
-			cout << i << "x" << j << "=" << mul<<" ";
+			cout << i << "x" <<  j << "=" << mul<<" ";
 
 			for (int k = 0; k < offset; k++)
 			{
