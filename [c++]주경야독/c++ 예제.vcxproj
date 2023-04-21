@@ -141,7 +141,10 @@
     <ClCompile Include="[152]vector 사용하기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="[153]vecto사용하기 수정.cpp" />
+    <ClCompile Include="[153]vecto사용하기 수정.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="[154]컨테이너와 배열복사하기copy.cpp" />
     <ClCompile Include="[35]순환문으로 문자 갯수 구하기for.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
