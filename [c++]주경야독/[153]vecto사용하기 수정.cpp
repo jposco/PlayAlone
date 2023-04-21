@@ -40,5 +40,5 @@ int main()
 	for (int i = 0; i < data2.size(); i++)
 		cout << "data2 (" << i << ") : " << data2.at(i) << endl;
 
-	return 0;
+	return 0; 
 }
