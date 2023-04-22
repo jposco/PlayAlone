@@ -16,7 +16,7 @@ int main()
 	for (auto i : number2)
 		cout << i << " ";
 	//0, 0, 1, 2, 3, 4, 5 Ãâ·Â
-	cout << endl;
+	cout << endl; 
 	 
 	double number3[5] = { 1.2,3.4,5.6,7.8,9.9 };
 	double number4[5];
