@@ -63,5 +63,8 @@
     <ClCompile Include="[154]컨테이너와 배열복사하기copy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="[65]문자열 정렬하기sort.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
