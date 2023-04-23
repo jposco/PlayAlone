@@ -43,13 +43,11 @@ desc user;
 SELECT * FROM user;
 
 -튜플 삽입 명령어
-INSERT
-INTO user
+INSERT INTO user
 VALUES('posco','정제철','영등포');
 
 -튜플 삭제 명령어
-DELETE
-FROM user
+DELETE FROM user
 WHERE name = '정제철';
 
 -튜플 내용 변경 명령어
@@ -63,10 +61,26 @@ FROM user
 WHERE birthday
 order by birthday asc|desc;
 
--직원 테이블에서 직원 수를 계산합니다.
+-참조키 연결해서 지역확인하기
+SELECT e.name, d.name
+FROM employees e
+JOIN departments d ON e.department_id = d.id
+WHERE d.location = 'New York';
+
+-6월생일
+WHERE MONTH(birthday)=6;
+
+-25세 이상 50세 이하
+WHERE age >= 25 and age <= 50;
+
+-1970년대생
+WHERE birthday
+BETWEEN '1970-01-01' and '1979-12-31';
+
+-직원 수(count())를 계산합니다.
 SELECT count(*) from employees;
 
--직원 테이블에서 각 부서의 직원 수를 계산합니다.
+-각 부서별 직원 수를 계산합니다.
 SELECT department_id,count(department_id)
 FROM employees
 GROUP BY department_id;
@@ -77,6 +91,7 @@ SELECT AVG(age) FROM employees;
 -부서별 평균 나이를 계산합니다.
 SELECT department_id,AVG(age) FROM employees
 GROUP BY department_id;
+sum(age), max(age), min(age)도 가능
 
 -부서 테이블에서 지역 컬럼의 두번째 글자가 e인 부서를 조회합니다.
 SELECT * FROM departments
@@ -88,4 +103,4 @@ WHERE location LIKE '% %';
 
 -직원 테이블 이름마지막에 'n' 들어간거
 SELECT * FROM employees
-WHERE name LIKE '%n';
+WHERE name LIKE '%r_';
