@@ -13,7 +13,7 @@ int main()
 
 	cout << "==data1==" << endl;
 	// 10 20 20 40
-
+	 
 
 	for (int i = 0; i < data1.size(); i++)
 		cout << "data1 (" << i << ") : " << data1.at(i) << endl;
