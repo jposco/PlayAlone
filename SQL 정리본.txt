@@ -20,7 +20,7 @@ phone INT );
 CRATE TABLE orders (
 orderid INT NOT NULL PRIMARY KEY,
 userid VARCHAR(10) NOT NULL,
-prodname VARCHAR(20),
+prodname VARCHAR(20), 
 foreigh key(userid) references user(id) );
 
 -새로운 열(속성) 추가
