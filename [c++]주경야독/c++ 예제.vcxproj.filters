@@ -66,5 +66,8 @@
     <ClCompile Include="[65]문자열 정렬하기sort.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="[26]조건부 삼항연산자 이해하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
