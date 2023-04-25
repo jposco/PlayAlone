@@ -8,7 +8,7 @@ extern int g_number = 100;
 //쓰면 안된다 정도로 기억
 
 int Func1()
-{
+{ 
 	return g_number++;
 }
 
