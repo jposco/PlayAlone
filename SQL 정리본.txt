@@ -8,7 +8,7 @@ DROP SCHEMA posco;
 
 -스키마 사용
 USE poscol;
- 
+
 -테이블 생성
 CREATE TABLE user (
 id VARCER(10) NOT NULL PRIMARY KEY,
