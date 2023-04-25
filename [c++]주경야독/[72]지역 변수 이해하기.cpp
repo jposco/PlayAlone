@@ -11,7 +11,7 @@ int Temp1(const int arg)
 }
 
 int Temp2(const int arg)
-{
+{ 
 	int number = arg;
 	//지역변수 : 특정 지역에서만 유효한 변수
 
