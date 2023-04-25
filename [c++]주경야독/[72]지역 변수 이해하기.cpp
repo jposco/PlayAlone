@@ -8,7 +8,7 @@ int Temp1(const int arg)
 	//지역변수 : 특정 지역에서만 유효한 변수
 
 	return number + 1;
-}
+} 
 
 int Temp2(const int arg)
 { 
