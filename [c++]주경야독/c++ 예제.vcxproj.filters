@@ -72,5 +72,8 @@
     <ClCompile Include="[73]전역 변수 이해하기extern.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="[72]지역 변수 이해하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
