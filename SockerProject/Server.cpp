@@ -5,6 +5,7 @@
 #include <iostream>
 #include <thread>
 #include <vector>
+//#include <ctime>
 
 #define MAX_SIZE 1024 //상수 선언
 #define MAX_CLIENT 3 //최대 인원 3
@@ -25,6 +26,7 @@ vector<SOCKET_INFO> sck_list; //서버에 연결된 client를 저장할 변수.
 SOCKET_INFO server_sock; //서브소켓의 정보를 저장할 정보.
 int client_count = 0; //현재 접속된 클라이언트 수 카운트 용도.
 
+string get_current_time();
 void server_init(); //서버용 소켓을 만드는 함수
 void add_client(); //accept 함수 실행되고 있을 예정
 void send_msg(const char* msg); //send() 실행
@@ -39,6 +41,8 @@ int main() {
     // 0을 반환했다는 것은 Winsock을 사용할 준비가 되었다는 의미.
 
     int code = WSAStartup(MAKEWORD(2, 2), &wsa); //성공하면 0, !0 => 1
+
+ 
 
     if (!code) {
         server_init();
@@ -82,6 +86,19 @@ int main() {
     WSACleanup();
 
     return 0;
+}
+
+//현재 시간을 출력하는 코드
+string get_current_time() {
+    time_t rawtime;
+    struct tm timeinfo;
+    char Buffer[80];
+
+    time(&rawtime);
+    localtime_s(&timeinfo, &rawtime);
+
+    strftime(Buffer, sizeof(Buffer), "%Y-%m-%d %H:%M:%S", &timeinfo);
+    return Buffer;
 }
 
 void server_init() //서버측 소켓 활성화
@@ -164,11 +181,14 @@ void send_msg(const char* msg) {
 void recv_msg(int idx) {
     char buf[MAX_SIZE] = { };
     string msg = "";
-    //|
+
+
     while (1) {
         ZeroMemory(&buf, MAX_SIZE);//0로 초기화
+
+
         if (recv(sck_list[idx].sck, buf, MAX_SIZE, 0) > 0) {//대기. 메세지가 들어오면 0보다 커진다
-            msg = "|보낸사람 : " + sck_list[idx].user + "\t 보낸시간 : 2023-04-29 18:16:33 \n|내용 : " + buf+"";
+            msg = "|보낸사람 : " + sck_list[idx].user + "\t 보낸시간 : " + get_current_time() + "\n|전송내용 : " + buf;
             //정제철(시라소니)님의 말 : endl;
             cout << msg << endl;
             send_msg(msg.c_str());
@@ -188,3 +208,7 @@ void del_client(int idx) {
     closesocket(sck_list[idx].sck);
     client_count--;
 }
+
+
+
+
