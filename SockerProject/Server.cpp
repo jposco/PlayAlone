@@ -6,7 +6,7 @@
 #include <thread>
 #include <vector>
 //#include <ctime>
-
+ 
 #define MAX_SIZE 1024 //상수 선언
 #define MAX_CLIENT 3 //최대 인원 3
 
