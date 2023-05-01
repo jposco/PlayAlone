@@ -16,7 +16,7 @@ using std::endl;
 using std::string;
 using std::vector;
 
-struct SOCKET_INFO { //구조체 정의
+struct SOCKET_INFO { //구조체 정의 
     SOCKET sck; //ctrl + 클릭, unsigned int pointer형
     string user; //user  : 사람의 이름
 };
